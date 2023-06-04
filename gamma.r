@@ -6,6 +6,8 @@ load("EDFfair/AdultFinal.RData",verbose=T)
 hist(adult$age, probability=TRUE)
 plot(density(adult$age))
 
+x <- 1:100 # Graphing ages 1-100
+
 # Method of Moments
 A <- mean(adult$age)
 S2 <- var(adult$age)
