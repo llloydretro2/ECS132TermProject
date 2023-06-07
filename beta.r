@@ -4,7 +4,7 @@ load("EDFfair/lawschoolbrief.RData",verbose=T)
 
 # Actual Plot
 # hist(lawschoolbrief$GPA, probability=TRUE)
-plot(density(lawschoolbrief$GPA))
+plot(density(lawschoolbrief$GPA), col = "black", xlab = "x", ylab = "y", main = "Title")
 
 # Save to the local variable
 gpa <- lawschoolbrief$GPA
@@ -18,7 +18,7 @@ alpha <- A * ((A * (1 - A) / S2) - 1)
 # beta
 beta <- alpha / A - alpha
 
-curve(dbeta(x/5, alpha, beta)/5, 0, 5, add = TRUE, col = 2)
+curve(dbeta(x/5, alpha, beta)/5, 0, 5, add = TRUE, col = "red")
 
 
 nLL <- function(alpha, beta)
@@ -31,4 +31,8 @@ nLL <- function(alpha, beta)
 z <- stats4::mle(minuslog=nLL, start = list(alpha = .1, beta = .1))
 zAlpha <- z@coef["alpha"]
 zBeta <- z@coef["beta"]
-curve(dbeta(x/5, zAlpha, zBeta) / 5, 0, 5, add = TRUE, col = 3)
+curve(dbeta(x/5, zAlpha, zBeta) / 5, 0, 5, add = TRUE, col = "green")
+
+legend_labels <- c("Plot 1", "Plot 2", "Plot 3")
+legend_colors <- c("black", "red", "green")
+legend("topright", legend = legend_labels, col = legend_colors, lty = 1)
