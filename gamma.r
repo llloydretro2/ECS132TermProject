@@ -9,8 +9,6 @@ age <- adult$age
 #hist(age, probability=TRUE)
 plot(density(age), col = "black", ylim = c(0,.033), xlab = "x", ylab = "y", main = "Title")
 
-x <- 1:100 # Graphing ages 1-100
-
 # Method of Moments
 A <- mean(age)
 S2 <- var(age)
