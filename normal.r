@@ -16,7 +16,7 @@ S2 <- var(wt)
 
 sd <- sqrt(S2)
 
-curve(dnorm(x, A, sd), 0, 325, add = TRUE, col = "red")
+curve(dnorm(x, A, sd), 0, 325, add = TRUE, col = "red", lty = "dashed")
 
 
 nLL <- function(m, s)
@@ -28,8 +28,9 @@ nLL <- function(m, s)
 z <- stats4::mle(minuslog=nLL, start = list(m = .1, s = .1))
 zA <- z@coef["m"]
 zSd <- z@coef["s"]
-curve(dnorm(x, zA, zSd), 0, 325, add = TRUE, col = "green")
+curve(dnorm(x, zA, zSd), 0, 325, add = TRUE, col = "green", lty = "dotted")
 
-legend_labels <- c("Original", "MM", "MLE")
+legend_labels <- c("Data", "MM", "MLE")
 legend_colors <- c("black", "red", "green")
-legend("topright", legend = legend_labels, col = legend_colors, lty = 1)
+lengend_ltys  <- c("solid", "dashed", "dotted")
+legend("topright", legend = legend_labels, col = legend_colors, lty = lengend_ltys)
