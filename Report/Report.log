@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.5)  10 JUN 2023 14:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.5)  10 JUN 2023 15:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -419,15 +419,15 @@ Package caption Info: End \AtBeginDocument code.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(85.35826pt, 426.79135pt, 85.35826pt)
-* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
+* v-part:(T,H,B)=(85.35826pt, 674.33032pt, 85.35826pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=426.79135pt
-* \textheight=731.23584pt
-* \oddsidemargin=13.08827pt
-* \evensidemargin=13.08827pt
-* \topmargin=-52.36449pt
+* \textwidth=483.69687pt
+* \textheight=674.33032pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-23.91173pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=12.0pt
@@ -506,12 +506,12 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 File: normHist.png Graphic file (type png)
 <use normHist.png>
 Package pdftex.def Info: normHist.png  used on input line 62.
-(pdftex.def)             Requested size: 298.75264pt x 205.09804pt.
+(pdftex.def)             Requested size: 338.58632pt x 232.44676pt.
 <normDensity.png, id=59, 367.3725pt x 252.19218pt>
 File: normDensity.png Graphic file (type png)
 <use normDensity.png>
 Package pdftex.def Info: normDensity.png  used on input line 67.
-(pdftex.def)             Requested size: 298.75264pt x 205.09804pt.
+(pdftex.def)             Requested size: 338.58632pt x 232.44676pt.
  [4 <./normHist.png> <./normDensity.png>]
 LaTeX Font Info:    Trying to load font information for OT1+ntxtt on input line 73.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/newtx/ot1ntxtt.fd
@@ -523,72 +523,101 @@ LaTeX Font Info:    Font shape `OT1/ntxtt/m/n' will be
 File: normDensityA.png Graphic file (type png)
 <use normDensityA.png>
 Package pdftex.def Info: normDensityA.png  used on input line 85.
-(pdftex.def)             Requested size: 298.75264pt x 205.09804pt.
+(pdftex.def)             Requested size: 483.69687pt x 332.06735pt.
  [5 <./normDensityA.png>]
 <normButGamma.png, id=82, 367.3725pt x 252.19218pt>
 File: normButGamma.png Graphic file (type png)
 <use normButGamma.png>
 Package pdftex.def Info: normButGamma.png  used on input line 94.
-(pdftex.def)             Requested size: 298.75264pt x 205.09804pt.
+(pdftex.def)             Requested size: 483.69687pt x 332.06735pt.
  [6 <./normButGamma.png>]
 <expHistDefault.png, id=90, 367.3725pt x 252.19218pt>
 File: expHistDefault.png Graphic file (type png)
 <use expHistDefault.png>
 Package pdftex.def Info: expHistDefault.png  used on input line 120.
-(pdftex.def)             Requested size: 298.75264pt x 205.09804pt.
+(pdftex.def)             Requested size: 338.58632pt x 232.44676pt.
 <expDensityDefault.png, id=91, 367.3725pt x 252.19218pt>
 File: expDensityDefault.png Graphic file (type png)
 <use expDensityDefault.png>
 Package pdftex.def Info: expDensityDefault.png  used on input line 125.
-(pdftex.def)             Requested size: 298.75264pt x 205.09804pt.
+(pdftex.def)             Requested size: 338.58632pt x 232.44676pt.
  [7 <./expHistDefault.png> <./expDensityDefault.png>]
 <expHistModifiedA.png, id=100, 367.3725pt x 252.19218pt>
 File: expHistModifiedA.png Graphic file (type png)
 <use expHistModifiedA.png>
 Package pdftex.def Info: expHistModifiedA.png  used on input line 153.
-(pdftex.def)             Requested size: 298.75264pt x 205.09804pt.
+(pdftex.def)             Requested size: 338.58632pt x 232.44676pt.
 <expDensityDefaultA.png, id=101, 367.3725pt x 252.19218pt>
 File: expDensityDefaultA.png Graphic file (type png)
 <use expDensityDefaultA.png>
 Package pdftex.def Info: expDensityDefaultA.png  used on input line 158.
-(pdftex.def)             Requested size: 298.75264pt x 205.09804pt.
- [8 <./expHistModifiedA.png> <./expDensityDefaultA.png>]
+(pdftex.def)             Requested size: 338.58632pt x 232.44676pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[8 <./expHistModifiedA.png>]
 File: expHistModifiedA.png Graphic file (type png)
 <use expHistModifiedA.png>
 Package pdftex.def Info: expHistModifiedA.png  used on input line 170.
-(pdftex.def)             Requested size: 298.75264pt x 205.09804pt.
-<expDensityModifiedA.png, id=114, 367.3725pt x 252.19218pt>
+(pdftex.def)             Requested size: 338.58632pt x 232.44676pt.
+<expDensityModifiedA.png, id=112, 367.3725pt x 252.19218pt>
 File: expDensityModifiedA.png Graphic file (type png)
 <use expDensityModifiedA.png>
 Package pdftex.def Info: expDensityModifiedA.png  used on input line 175.
-(pdftex.def)             Requested size: 298.75264pt x 205.09804pt.
- [9 <./expDensityModifiedA.png>]
-<expDensitySmallA.png, id=122, 367.3725pt x 252.19218pt>
+(pdftex.def)             Requested size: 338.58632pt x 232.44676pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[9 <./expDensityDefaultA.png>]
+<expDensitySmallA.png, id=120, 367.3725pt x 252.19218pt>
 File: expDensitySmallA.png Graphic file (type png)
 <use expDensitySmallA.png>
 Package pdftex.def Info: expDensitySmallA.png  used on input line 184.
-(pdftex.def)             Requested size: 298.75264pt x 205.09804pt.
- [10 <./expDensitySmallA.png>] [11] [12]
+(pdftex.def)             Requested size: 338.58632pt x 232.44676pt.
+ [10 <./expDensityModifiedA.png> <./expDensitySmallA.png>]
+<gammaHist.png, id=129, 367.3725pt x 252.19218pt>
+File: gammaHist.png Graphic file (type png)
+<use gammaHist.png>
+Package pdftex.def Info: gammaHist.png  used on input line 215.
+(pdftex.def)             Requested size: 338.58632pt x 232.44676pt.
+<gammaDensity.png, id=130, 367.3725pt x 252.19218pt>
+File: gammaDensity.png Graphic file (type png)
+<use gammaDensity.png>
+Package pdftex.def Info: gammaDensity.png  used on input line 220.
+(pdftex.def)             Requested size: 338.58632pt x 232.44676pt.
+ [11 <./gammaHist.png> <./gammaDensity.png>]
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 8.0pt on input line 253.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 6.0pt on input line 253.
+<gammaDensityA.png, id=139, 367.3725pt x 252.19218pt>
+File: gammaDensityA.png Graphic file (type png)
+<use gammaDensityA.png>
+Package pdftex.def Info: gammaDensityA.png  used on input line 261.
+(pdftex.def)             Requested size: 338.58632pt x 232.44676pt.
+ [12 <./gammaDensityA.png>] [13]
 Chapter 3.
-[13
+[14
 
 ] (./Report.aux)
 Package rerunfilecheck Info: File `Report.out' has not changed.
 (rerunfilecheck)             Checksum: C9B8B175583931467B7C8042A4D55BED;625.
  ) 
 Here is how much of TeX's memory you used:
- 15434 strings out of 476025
- 241515 string characters out of 5790018
- 1858388 words of memory out of 5000000
- 35618 multiletter control sequences out of 15000+600000
- 532384 words of font info for 82 fonts, out of 8000000 for 9000
+ 15464 strings out of 476025
+ 242057 string characters out of 5790018
+ 1860388 words of memory out of 5000000
+ 35639 multiletter control sequences out of 15000+600000
+ 533840 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,6n,131p,798b,1743s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 83i,10n,131p,798b,1743s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/txfonts/txtt.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/ztmr.pfb>
-Output written on Report.pdf (14 pages, 190700 bytes).
+Output written on Report.pdf (15 pages, 204957 bytes).
 PDF statistics:
- 195 PDF objects out of 1000 (max. 8388607)
- 139 compressed objects within 2 object streams
- 37 named destinations out of 1000 (max. 500000)
- 107 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 211 PDF objects out of 1000 (max. 8388607)
+ 148 compressed objects within 2 object streams
+ 43 named destinations out of 1000 (max. 500000)
+ 122 words of extra memory for PDF output out of 10000 (max. 10000000)
 

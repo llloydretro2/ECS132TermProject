@@ -10,10 +10,10 @@
 }
 
 \geometry{
-  top=2cm,
-  bottom=2cm,
-  left=3cm,
-  right=3cm,
+  top=3cm,
+  bottom=3cm,
+  left=2cm,
+  right=2cm,
 }
 
 % This this the title, arthur, and date
@@ -82,7 +82,7 @@ The method of moments for a normal distribution is relatively simple. The two pa
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.7\linewidth]{normDensityA.png}
+  \includegraphics[width=\linewidth]{normDensityA.png}
 \end{figure}
 
 \newpage
@@ -91,7 +91,7 @@ However, based on the graph, which has a slightly steeper slope on the left side
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.7\linewidth]{normButGamma.png}
+  \includegraphics[width=\linewidth]{normButGamma.png}
 \end{figure}
 
 And from the graph, we must concede that the gamma family may model this data better than the normal family. But if the central limit theorem says that sums of random variables look normal, and the gamma distribution is a sum of exponentially distributed random variables, it’s no wonder that the graphs look pretty similar. If we’re summing a large enough number of exponential variables, it’s possible that the gamma distribution could converge to a normal distribution. From this line of thinking, the normal and gamma distribution are likely both good estimators for the weights in the dataset.
@@ -207,9 +207,73 @@ But even with these discrepancies, given our plots of the exponential distributi
 
 \newpage
 \section{Gamma}
+
+To model the gamma family of distributions, we decided to use the age column from the dataset adultfinal, which seems like it contains various data from specifically working individuals. We decided to use age because the histogram we observed was very gamma in nature. It shows a steep increase in the number of people in the beginning and more gradually decreases as we go up in age.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.7\linewidth]{gammaHist.png}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.7\linewidth]{gammaDensity.png}
+\end{figure}
+
+The gamma family can be described as a sum of exponentially distributed random variables. So the gamma family has two parameters, \(lambda\), the same kind as those of the exponential family, and \(r\), the number of exponential variables that are summed together. Assuming that this age data can be modeled with a gamma function, we are trying to find estimates for lambda and \(r\), which will be called \(L\) and \(C\), respectively.
+We use this line of code for the maximum likelihood estimator:
+\begin{lstlisting}
+  loglik <- -sum(dgamma(age, C, L, log = TRUE))
+\end{lstlisting}
+Pluging this into the \lstinline{mle()} function gives us \(C = 8.596535\) and \(L = 0.2236146\). 
+For the method of moments, we again use algebra to find \(C\) and \(L\).
+
+% $E(X) = \frac{r}{\lambda}$
+
+% $\text{Var}(X) = \frac{r}{\lambda^2}$
+
+% $\bar{A} = \frac{C}{L}$
+
+% $C = \bar{A}L$
+
+% $s^2 = \frac{C}{L^2}$
+
+% $s^2 = \frac{A}{L}$
+
+% $L = \frac{A}{s^2}$
+
+\begin{gather*}
+  E(X) = \frac{r}{\lambda} \\
+  \text{Var}(X) = \frac{r}{\lambda^2} \\
+  \bar{A} = \frac{C}{L} \\
+  C = \bar{A}L \\
+  s^2 = \frac{C}{L^2} \\
+  s^2 = \frac{A}{L} \\
+  L = \frac{A}{s^2}
+\end{gather*}
+
+
+
+Substituting $s^2$ with $var(age)$ and $\bar{A}$ with $mean(age)$ we get $C = 8.587819$ and $L = 0.2233877$.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.7\linewidth]{gammaDensityA.png}
+\end{figure}
+
+Judging from the graph, the gamma distribution is a decent estimator for the ages in this dataset. It works especially well for estimating the number of people aged 45 and above. It doesn’t work as well for the rest of the data, but it does the job well enough. In any case, it would be hard to find a distribution family that better fits this data. 
+It is important to note that the ages from this sample don’t exactly reflect the age of everyone in a given population. There is some sampling bias here in that the data is only taken from people who have an occupation, and notably, there is no data from anyone aged 16 or below. Because of this, it is hard to justify why this dataset’s age can be described as a gamma-distributed variable since there are a couple of factors going on here.
+
+
+
+
+
+
+
+
+
+
 \newpage
-
-
 \section{Beta}
 % https://statproofbook.github.io/P/beta-mome.html
 % (8) (9) for alpha and beta
