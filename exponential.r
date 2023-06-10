@@ -2,32 +2,37 @@
 setwd("C:/Users/jonas/Desktop/Class/ECS132/ECS132TermProject/Data")
 load("qeML/weatherTS.RData",verbose=T) 
 
-
 # Save to the local variable
 prec <- weatherTS$PRECTOT
 
-# Actual Plot
-hist(prec, probability=TRUE, ylim = c(0,.55), breaks = 40)
+# Default plots
+#hist(prec, probability=TRUE, ylim = c(0,.55))
 #plot(density(prec), col = "black", xlab = "x", ylab = "y", main = "Title")
 
+# Modified Plot
+hist(prec, probability=TRUE, ylim = c(0,.55), breaks=40)
+#plot(density(prec , adjust = 3), col = "black", xlab = "x", ylab = "y", main = "Title")
 
-# Average # 1/l
 A <- mean(prec)
-# lambda
-lambda <- 1 / A
+L <- 1 / A
 
-curve(dexp(x, lambda), 0, 60, add = TRUE, col = "red")
+S2 <- var(prec)
+vL <- sqrt(1/S2)
 
-nLL <- function(lambda)
+curve(dexp(x, L), 0, 60, add = TRUE, col = "red", lty = "dashed")
+curve(dexp(x, vL), 0, 60, add = TRUE, col = "blue")
+
+nLL <- function(L)
 {
-  loglik <- sum(dexp(prec, rate = lambda, log = TRUE))
+  loglik <- sum(dexp(prec, L, log = TRUE))
   return(-loglik)
 }
 
-z <- stats4::mle(minuslog=nLL, start = list(lambda = .1))
-zLambda <- z@coef["lambda"]
-curve(dexp(x, zLambda), 0, 60, add = TRUE, col = "green")
+z <- stats4::mle(minuslog=nLL, start = list(L = .1))
+zL <- z@coef["L"]
+curve(dexp(x, zL), 0, 60, add = TRUE, col = "green", lty = "dotted")
 
-legend_labels <- c("Data", "MM", "MLE")
-legend_colors <- c("black", "red", "green")
-legend("topright", legend = legend_labels, col = legend_colors, lty = 1)
+legend_labels <- c("Data", "MM (mean)", "MM (var)", "MLE")
+legend_colors <- c("black", "red", "blue", "green")
+lengend_ltys  <- c("solid", "dashed", "solid", "dotted")
+legend("topright", legend = legend_labels, col = legend_colors, lty = lengend_ltys)
