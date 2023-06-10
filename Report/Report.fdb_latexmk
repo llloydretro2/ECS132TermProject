@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1686425242 "/Users/lloydretro2/Desktop/ECS132/TermProject/Report/Report.tex" "Report.pdf" "Report" 1686425244 0
-  "/Users/lloydretro2/Desktop/ECS132/TermProject/Report/Report.tex" 1686425242 6243 09794363873bae42de95baefdd5b9a43 ""
+["pdflatex"] 1686425541 "/Users/lloydretro2/Desktop/ECS132/TermProject/Report/Report.tex" "Report.pdf" "Report" 1686425543 0
+  "/Users/lloydretro2/Desktop/ECS132/TermProject/Report/Report.tex" 1686425539 6026 457088367b8de6bace1e1fc4ecddeb16 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc" 1422827479 2083 60e36f8eac802fcaf19eabe2633b406e ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -119,13 +119,14 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1686012402 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1686012297 7883462 d6d1681afd46bd7ff1a5ed46265b80a1 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "Report.aux" 1686425244 2078 d457a080239e2e392dc8c64b0b4c1fe7 "pdflatex"
-  "Report.out" 1686425244 625 e789da2db2c3297d723dc173a197f0aa "pdflatex"
-  "Report.tex" 1686425242 6243 09794363873bae42de95baefdd5b9a43 ""
-  "Report.toc" 1686425244 466 1fc908a3323b147c1af6c9a60e95d8e8 "pdflatex"
+  "Report.aux" 1686425542 1535 1842fede173da5b8e804a90a6054741c "pdflatex"
+  "Report.out" 1686425542 625 e789da2db2c3297d723dc173a197f0aa "pdflatex"
+  "Report.tex" 1686425539 6026 457088367b8de6bace1e1fc4ecddeb16 ""
+  "Report.toc" 1686425542 465 9b2b3d2952ddcee5b0532c73917b0390 "pdflatex"
   "expDensityDefault.png" 1686424625 3451 3a1f1bb1328992e2a86915a0c7dbf414 ""
   "expDensityDefaultA.png" 1686424625 5107 c34d4ae6b81ab82cb4c657aca6e4b602 ""
   "expDensityModifiedA.png" 1686424625 5334 7ade037ba835c6e0ca3a023b1d8bc64e ""
+  "expDensitySmallA.png" 1686424625 5091 1edae9b952a90fcc0c1b8bf8a839a9db ""
   "expHistDefault.png" 1686424625 3285 cda8dc6b7c7224af46fbb5053d5c6b13 ""
   "expHistModifiedA.png" 1686424625 5314 b0175476cc872ed3767f4a14396da28d ""
   (generated)
