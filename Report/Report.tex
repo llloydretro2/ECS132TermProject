@@ -1,12 +1,19 @@
 % This are the basic setting, just leave it
 \documentclass[12pt, a4paper, oneside]{report}
-\usepackage{amsmath, amsthm, amssymb, graphicx, setspace, newtxtext, listings, subcaption}
+\usepackage{amsmath, amsthm, amssymb, graphicx, setspace, newtxtext, listings, subcaption, geometry}
 \usepackage[bookmarks=true, colorlinks, citecolor=blue, linkcolor=black]{hyperref}
 
 \lstset{
   language=R,
   basicstyle=\ttfamily,
   keywordstyle=\color{blue},
+}
+
+\geometry{
+  top=2cm,
+  bottom=2cm,
+  left=3cm,
+  right=3cm,
 }
 
 % This this the title, arthur, and date
@@ -75,7 +82,7 @@ The method of moments for a normal distribution is relatively simple. The two pa
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\linewidth]{normDensityA.png}
+  \includegraphics[width=0.7\linewidth]{normDensityA.png}
 \end{figure}
 
 \newpage
@@ -143,12 +150,12 @@ With this method, \(L\) is shown to be 0.2002137, which is very different from t
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\linewidth]{expHistModifiedA.png}
+  \includegraphics[width=0.7\linewidth]{expHistModifiedA.png}
 \end{figure}
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\linewidth]{expDensityDefaultA.png}
+  \includegraphics[width=0.7\linewidth]{expDensityDefaultA.png}
 \end{figure}
 
 \newpage
@@ -160,12 +167,12 @@ By decreasing the bandwidth for the \lstinline{density()} function and increasin
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\linewidth]{expHistModifiedA.png}
+  \includegraphics[width=0.7\linewidth]{expHistModifiedA.png}
 \end{figure}
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\linewidth]{expDensityModifiedA.png}
+  \includegraphics[width=0.7\linewidth]{expDensityModifiedA.png}
 \end{figure}
 
 \newpage
@@ -174,7 +181,7 @@ The histogram looks good, but the density function is arguably less exponential-
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8 \linewidth]{expDensitySmallA.png} %expDensitySmallA
+  \includegraphics[width=0.7 \linewidth]{expDensitySmallA.png} %expDensitySmallA
 \end{figure}
 
 
