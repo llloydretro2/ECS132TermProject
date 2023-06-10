@@ -1,8 +1,14 @@
 % This are the basic setting, just leave it
 \documentclass[12pt, a4paper, oneside]{report}
-\usepackage{amsmath, amsthm, amssymb, graphicx, setspace}
+\usepackage{amsmath, amsthm, amssymb, graphicx, setspace, newtxtext, listings}
+\graphicspath{ {./images/} }
 \usepackage[bookmarks=true, colorlinks, citecolor=blue, linkcolor=black]{hyperref}
 
+\lstset{
+  language=R,
+  basicstyle=\ttfamily,
+  keywordstyle=\color{blue},
+}
 
 % This this the title, arthur, and date
 % remember to change our name to official name and add email later
@@ -10,6 +16,13 @@
 \author{JT\\Alex\\Haosen}
 \date{\today}
 \doublespace{}
+
+% chktex 36
+
+% Google Doc link
+% https://docs.google.com/document/d/1c2Lg5Y1ekLZNBOz9qw190xJkgW0L_A6-DEsg0y5Ebts/edit
+
+
 
 
 % This is the actual content of the report
@@ -22,15 +35,75 @@
 
 \newpage
 
+
+
+
+
 \chapter{Analysis}
 Part 1 content
 \newpage
 
-\section{Normal}
-Part 1.1 content
-\newpage
+
+
 
 \section{Exponential}
+To model the exponential family of distributions we decided to base our model on the PRECTOT column of the weatherTS data, which looks like it took weather data from Eastern Australia for 10 years (1985--1995).
+Of this data, the one we were most interested in was the PRECTOT column, which we interpreted as the total precipitation on a given day.
+When we plotted the histogram, the data was heavily skewed left, tapering off more to the right, which resembled that of an exponential graph.
+The most important thing was that the peak of the data was at x = 0, which is where exponential graphs peak.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.5]{images/HistOriginal.png}
+    \caption{histogram for PRECTOT}
+\end{figure}
+
+The exponential family is a one-parameter family, that being lambda. Using the two methods, we are trying to find an estimator for lambda, which will be referred to as L.
+For maximum likelihood, we used R's \lstinline{mle()} function to find L, which takes a negative log-likelihood function.
+While the likelihood function is the product of density functions on the given data, the log-likelihood is the sum of the logarithm of those density functions.
+Therefore we use this line of code to get the negative log-likelihood.
+
+\begin{lstlisting}
+loglik <- -sum(dexp(prectot, L, log = TRUE))
+\end{lstlisting}
+
+Where prectot is our precipitation data and L is our estimator for lambda.
+Plugging this into the \lstinline{mle()} function we get L to be 0.5230325.
+
+Next, for method of moments, we algebra to estimate L.
+For a given exponentially distributed variable \(X\), the expected value is given by \(E(X) = \frac{1}{\lambda}\). Assuming the mean of our sample data, \(\bar{A}\), is an unbiased estimator for the true mean of the population data, \(\bar{A} = \frac{1}{L}\), and therefore \(L = \frac{1}{\bar{A}}\).
+Plugging this into R we get L to be 0.5230367.
+Because this is a one-parameter family, we can also derive \(L\) from our sample variance \(S^2\). The variance of an exponentially distributed variable X is given by \(Var(X) = 1 / \lambda^2\). Therefore \(L\) is given by \(L = \sqrt{1 / S^2}\).
+With this method, L is shown to be 0.2002137, which is very different from the other two methods above. From the graphs below, this particular estimate for lambda isn't very good. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\newpage
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Normal}
 Part 1.1 content
 \newpage
 
@@ -45,7 +118,7 @@ Part 1.1 content
 \newpage
 
 
-\chapter{Summary}
+\chapter{Conclusion}
 \newpage
 
 
