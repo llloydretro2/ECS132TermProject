@@ -1,7 +1,6 @@
 % This are the basic setting, just leave it
 \documentclass[12pt, a4paper, oneside]{report}
-\usepackage{amsmath, amsthm, amssymb, graphicx, setspace, newtxtext, listings}
-\graphicspath{ {./images/} }
+\usepackage{amsmath, amsthm, amssymb, graphicx, setspace, newtxtext, listings, subcaption}
 \usepackage[bookmarks=true, colorlinks, citecolor=blue, linkcolor=black]{hyperref}
 
 \lstset{
@@ -52,11 +51,23 @@ Of this data, the one we were most interested in was the PRECTOT column, which w
 When we plotted the histogram, the data was heavily skewed left, tapering off more to the right, which resembled that of an exponential graph.
 The most important thing was that the peak of the data was at \(x = 0\), which is where exponential graphs peak.
 
-\begin{figure}[h]
+
+%expHistDefault, %expDensityDefault
+\begin{figure}[htbp]
+  \centering
+  \begin{subfigure}{0.45\textwidth}
     \centering
-    \includegraphics[scale=0.5]{images/HistOriginal.png} %expHistDefault, %expDensityDefault
-    \caption{histogram for PRECTOT}
+    \includegraphics[width=\linewidth]{expHistDefault.png}
+    \caption{Graph 1}
+  \end{subfigure}
+  \begin{subfigure}{0.45\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{expDensityDefault.png}
+    \caption{Graph 2}
+  \end{subfigure}
+  \caption{Two Graphs}
 \end{figure}
+
 
 The exponential family is a one-parameter family, that being lambda. Using the two methods, we are trying to find an estimator for lambda, which will be referred to as \(L\).
 For maximum likelihood, we used R's \lstinline{mle()} function to find \(L\), which takes a negative log-likelihood function.
@@ -81,26 +92,48 @@ Plugging this into R we get \(L\) to be 0.5230367.
 Because this is a one-parameter family, we can also derive \(L\) from our sample variance \(S^2\). The variance of an exponentially distributed variable X is given by \(Var(X) = 1 / \lambda^2\). Therefore \(L\) is given by \(L = \sqrt{1 / S^2}\).
 With this method, \(L\) is shown to be 0.2002137, which is very different from the other two methods above. From the graphs below, this particular estimate for lambda isn't very good. 
 
-\begin{figure}[h]
+%expHistDefaultA, %expDensityDefaultA
+\begin{figure}[htbp]
   \centering
-  \includegraphics[scale=0.5]{images/vL.png} %expHistDefaultA, %expDensityDefaultA
-  \caption{}
+  \begin{subfigure}{0.45\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{expHistModifiedA.png}
+    \caption{Graph 1}
+  \end{subfigure}
+  \begin{subfigure}{0.45\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{expDensityDefaultA.png}
+    \caption{Graph 2}
+  \end{subfigure}
+  \caption{Two Graphs}
 \end{figure}
+
 
 It is important to note that our exponential distribution plots don't quite match those of the \lstinline{hist()} or \lstinline{density()} functions on our sample data, at least with their default arguments. These discrepancies can be attributed to a bandwidth that doesn't accurately reflect our sample. 
 By decreasing the bandwidth for the \lstinline{density()} function and increasing it for the \lstinline{density()} function, we get graphs that better match our plots.
 
-\begin{figure}[h]
+
+%expHistModifiedA, %expDensityModifiedA
+\begin{figure}[htbp]
   \centering
-  \includegraphics[scale=0.5]{images/vL.png} %expHistModifiedA, %expDensityModifiedA
-  \caption{}
+  \begin{subfigure}{0.45\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{expHistModifiedA.png}
+    \caption{Graph 1}
+  \end{subfigure}
+  \begin{subfigure}{0.45\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{expDensityModifiedA.png}
+    \caption{Graph 2}
+  \end{subfigure}
+  \caption{Two Graphs}
 \end{figure}
 
 The histogram looks good, but the density function is arguably less exponential-looking as a result. Lowering the bandwidth of the density function does make it more exponential, but likely at the cost of being less accurate due to how few points can actually fit into an individual bandwidth. 
 
-\begin{figure}[h]
+\begin{figure}[htbp]
   \centering
-  \includegraphics[scale=0.5]{images/vL.png} %expDensitySmallA
+  \includegraphics[scale=0.4]{expDensityDefault.png} %expDensitySmallA
   \caption{}
 \end{figure}
 
