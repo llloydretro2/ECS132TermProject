@@ -50,7 +50,7 @@ Part 1 content
 To model the exponential family of distributions we decided to base our model on the PRECTOT column of the weatherTS data, which looks like it took weather data from Eastern Australia for 10 years (1985--1995).
 Of this data, the one we were most interested in was the PRECTOT column, which we interpreted as the total precipitation on a given day.
 When we plotted the histogram, the data was heavily skewed left, tapering off more to the right, which resembled that of an exponential graph.
-The most important thing was that the peak of the data was at x = 0, which is where exponential graphs peak.
+The most important thing was that the peak of the data was at \(x = 0\), which is where exponential graphs peak.
 
 \begin{figure}[h]
     \centering
@@ -58,8 +58,8 @@ The most important thing was that the peak of the data was at x = 0, which is wh
     \caption{histogram for PRECTOT}
 \end{figure}
 
-The exponential family is a one-parameter family, that being lambda. Using the two methods, we are trying to find an estimator for lambda, which will be referred to as L.
-For maximum likelihood, we used R's \lstinline{mle()} function to find L, which takes a negative log-likelihood function.
+The exponential family is a one-parameter family, that being lambda. Using the two methods, we are trying to find an estimator for lambda, which will be referred to as \(L\).
+For maximum likelihood, we used R's \lstinline{mle()} function to find \(L\), which takes a negative log-likelihood function.
 While the likelihood function is the product of density functions on the given data, the log-likelihood is the sum of the logarithm of those density functions.
 Therefore we use this line of code to get the negative log-likelihood.
 
@@ -67,17 +67,39 @@ Therefore we use this line of code to get the negative log-likelihood.
 loglik <- -sum(dexp(prectot, L, log = TRUE))
 \end{lstlisting}
 
-Where prectot is our precipitation data and L is our estimator for lambda.
-Plugging this into the \lstinline{mle()} function we get L to be 0.5230325.
+Where prectot is our precipitation data and \(L\) is our estimator for lambda.
+Plugging this into the \lstinline{mle()} function we get \(L\) to be 0.5230325.
 
-Next, for method of moments, we algebra to estimate L.
+Next, for method of moments, we algebra to estimate \(L\).
 For a given exponentially distributed variable \(X\), the expected value is given by \(E(X) = \frac{1}{\lambda}\). Assuming the mean of our sample data, \(\bar{A}\), is an unbiased estimator for the true mean of the population data, \(\bar{A} = \frac{1}{L}\), and therefore \(L = \frac{1}{\bar{A}}\).
-Plugging this into R we get L to be 0.5230367.
+Plugging this into R we get \(L\) to be 0.5230367.
 Because this is a one-parameter family, we can also derive \(L\) from our sample variance \(S^2\). The variance of an exponentially distributed variable X is given by \(Var(X) = 1 / \lambda^2\). Therefore \(L\) is given by \(L = \sqrt{1 / S^2}\).
-With this method, L is shown to be 0.2002137, which is very different from the other two methods above. From the graphs below, this particular estimate for lambda isn't very good. 
+With this method, \(L\) is shown to be 0.2002137, which is very different from the other two methods above. From the graphs below, this particular estimate for lambda isn't very good. 
 
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.5]{images/vL.png}
+  \caption{}
+\end{figure}
 
+It is important to note that our exponential distribution plots don't quite match those of the \lstinline{hist()} or \lstinline{density()} functions on our sample data, at least with their default arguments. These discrepancies can be attributed to a bandwidth that doesn't accurately reflect our sample. 
+By decreasing the bandwidth for the \lstinline{density()} function and increasing it for the \lstinline{density()} function, we get graphs that better match our plots.
 
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.5]{images/vL.png}
+  \caption{}
+\end{figure}
+
+The histogram looks good, but the density function is arguably less exponential-looking as a result. Lowering the bandwidth of the density function does make it more exponential, but likely at the cost of being less accurate due to how few points can actually fit into an individual bandwidth. 
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.5]{images/vL.png}
+  \caption{}
+\end{figure}
+
+But even with these discrepancies, given our plots of the exponential distribution, we would say this family is a suitable estimator for the total precipitation on a given day in Australia. The exponential distribution is said to be the continuous analog of the geometric distribution. How much precipitation you get in the day is pretty much the same as how long it rains on a given day. And how long it rains in a given day can be thought of as successive failures (the rain continuing) until a single success (the rain stopping), which is like a geometric distribution. Obviously, this is an oversimplification but it shows how an exponential distribution can model the density function of total precipitation.
 
 
 

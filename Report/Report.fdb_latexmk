@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1686380166 "/Users/lloydretro2/Desktop/ECS132/TermProject/Report/Report.tex" "Report.pdf" "Report" 1686380168 0
-  "/Users/lloydretro2/Desktop/ECS132/TermProject/Report/Report.tex" 1686380166 3485 39d2f42c60543888ae54bb4ceb22b768 ""
+["pdflatex"] 1686412801 "/Users/lloydretro2/Desktop/ECS132/TermProject/Report/Report.tex" "Report.pdf" "Report" 1686412803 0
+  "/Users/lloydretro2/Desktop/ECS132/TermProject/Report/Report.tex" 1686412801 5309 ef800685c6683349a6c59a9ef5f2b4db ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc" 1422827479 2083 60e36f8eac802fcaf19eabe2633b406e ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -116,11 +116,12 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1686012402 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1686012297 7883462 d6d1681afd46bd7ff1a5ed46265b80a1 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "Report.aux" 1686380167 1670 0a55d6dc003d3f3d1ad996a823d80296 "pdflatex"
-  "Report.out" 1686380167 625 e789da2db2c3297d723dc173a197f0aa "pdflatex"
-  "Report.tex" 1686380166 3485 39d2f42c60543888ae54bb4ceb22b768 ""
-  "Report.toc" 1686380167 464 19089543e4033535499ab1f45f911fed "pdflatex"
+  "Report.aux" 1686412802 2016 29c11ec9d2246cc254a793c6a1be2be8 "pdflatex"
+  "Report.out" 1686412802 625 e789da2db2c3297d723dc173a197f0aa "pdflatex"
+  "Report.tex" 1686412801 5309 ef800685c6683349a6c59a9ef5f2b4db ""
+  "Report.toc" 1686412802 465 9b2b3d2952ddcee5b0532c73917b0390 "pdflatex"
   "images/HistOriginal.png" 1686378434 17603 2364fa5f05ec636ff72887028804e4d4 ""
+  "images/vL.png" 1686412497 16076 49b968fa5cb65ff929879980e49c649f ""
   (generated)
   "Report.aux"
   "Report.log"
