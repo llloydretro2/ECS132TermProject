@@ -65,7 +65,7 @@ The most important thing was that the peak of the data was at \(x = 0\), which i
 \newpage
 Just from looking at these graphs, while the density function doesn’t look quite exponential, the histogram definitely does. We will discuss possible reasons why later on. But for now, we will find estimators for the parameters of the exponential family.
 The exponential family is a one-parameter family, that being lambda. Using the two methods, we are trying to find an estimator for lambda, which will be referred to as \(L\).
-We use this line of code to get the negative log-likelihood.
+We use this line of code to get the negative log-likelihood function for our maximum likelihood.
 
 \begin{lstlisting}
 loglik <- -sum(dexp(prectot, L, log = TRUE))
