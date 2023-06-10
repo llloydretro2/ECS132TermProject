@@ -2,6 +2,6 @@
 \contentsline {chapter}{\numberline {2}Analysis}{3}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Exponential}{4}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Normal}{11}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Gamma}{12}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Beta}{13}{section.2.4}%
-\contentsline {chapter}{\numberline {3}Conclusion}{14}{chapter.3}%
+\contentsline {section}{\numberline {2.3}Gamma}{16}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Beta}{17}{section.2.4}%
+\contentsline {chapter}{\numberline {3}Conclusion}{18}{chapter.3}%
