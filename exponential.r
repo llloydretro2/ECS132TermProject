@@ -7,7 +7,7 @@ load("qeML/weatherTS.RData",verbose=T)
 prec <- weatherTS$PRECTOT
 
 # Actual Plot
-hist(prec, probability=TRUE)
+hist(prec, probability=TRUE, ylim = c(0,.55), breaks = 40)
 #plot(density(prec), col = "black", xlab = "x", ylab = "y", main = "Title")
 
 
@@ -28,6 +28,6 @@ z <- stats4::mle(minuslog=nLL, start = list(lambda = .1))
 zLambda <- z@coef["lambda"]
 curve(dexp(x, zLambda), 0, 60, add = TRUE, col = "green")
 
-legend_labels <- c("Histogram", "MM", "MLE")
+legend_labels <- c("Data", "MM", "MLE")
 legend_colors <- c("black", "red", "green")
 legend("topright", legend = legend_labels, col = legend_colors, lty = 1)
