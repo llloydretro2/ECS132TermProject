@@ -45,6 +45,63 @@ Part 1 content
 
 
 
+
+\newpage
+\section{Normal}
+To model the normal family of distributions we decided to base our model on the weight column of the national.longitudinal.survey data, which contains data of 4908 individuals' statistics like age, race, height, and weight. The weight is distributed in the range from 87 to 325. When we plotted the histogram, most of the data are in the range from 100 to 200, and as we go to the left or right of that, the number of points decreases. But most importantly the data looked similar to a bell curve.
+
+%expHistDefault, %expDensityDefault
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\linewidth]{normHist.png}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\linewidth]{normDensity.png}
+\end{figure}
+
+\newpage
+The normal family of distributions has two parameters, mean and standard deviation. We are assuming that the weights in this dataset can be modeled with a normal distribution. Therefore we use two methods to find estimates for the mean and standard deviation parameters, which we will call \(M\) and \(SD\), respectively.
+
+For maximum likelihood, we used R's \lstinline{mle()} function to find \(M\) and \(SD\), which takes a negative log-likelihood function. While the likelihood function is the product of density functions on the given data, the log-likelihood is the sum of the logarithm of those density functions. Therefore we use this line as our negative log-likelihood function:
+
+\begin{lstlisting}
+loglik <- sum(dnorm(weights, M, SD, log = TRUE))
+\end{lstlisting}
+
+Where weights is our weight data, and \(M\) and \(SD\) are our parameter estimates. Plugging this into the \lstinline{mle()} function gives us \(M = 154.5827\) and \(SD = 33.18112\).
+
+The method of moments for a normal distribution is relatively simple. The two parameters of the normal distribution are the mean and standard deviation, which we can generate estimates for using our sample data directly from R. \(M\) is just \(\bar{A}\), our sample mean from calling \(mean(weights)\), and \(SD\) is just \(\sqrt{S^2}\) which can be given by calling \(sqrt(var(weights))\). The difference between using \(S^2\) and \(s^2\) is negligible. Using this method, we get \(M = 154.5827\) and \(SD = 33.18453\).
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\linewidth]{normDensityA.png}
+\end{figure}
+
+We would say that the normal family is a suitable estimator for the weights in this dataset. A normal distribution, according to the central limit theorem, is what results from a set of summations of random variables. The weight of a person can be thought of as a sum of the various parts of their body, whose sizes can be thought of as random. 
+However, based on the graph, which has a slightly steeper slope on the left side than on the right, it can be argued that a gamma distribution would better model this data. 
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\linewidth]{normButGamma.png}
+\end{figure}
+
+\newpage
+And from the graph, we must concede that the gamma family may model this data better than the normal family. But if the central limit theorem says that sums of random variables look normal, and the gamma distribution is a sum of exponentially distributed random variables, it’s no wonder that the graphs look pretty similar. If we’re summing a large enough number of exponential variables, it’s possible that the gamma distribution could converge to a normal distribution. From this line of thinking, the normal and gamma distribution are likely both good estimators for the weights in the dataset.
+
+
+
+
+
+
+
+
+
+
+
+
+\newpage
 \section{Exponential}
 To model the exponential family of distributions we decided to base our model on the PRECTOT column of the weatherTS data, which looks like it took weather data from Eastern Australia for 10 years (1985--1995).
 Of this data, the one we were most interested in was the PRECTOT column, which we interpreted as the total precipitation on a given day.
@@ -138,52 +195,6 @@ But even with these discrepancies, given our plots of the exponential distributi
 
 
 
-
-
-
-\newpage
-\section{Normal}
-To model the normal family of distributions we decided to base our model on the weight column of the national.longitudinal.survey data, which contains data of 4908 individuals' statistics like age, race, height, and weight. The weight is distributed in the range from 87 to 325. When we plotted the histogram, most of the data are in the range from 100 to 200, and as we go to the left or right of that, the number of points decreases. But most importantly the data looked similar to a bell curve.
-
-%expHistDefault, %expDensityDefault
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=0.8\linewidth]{normHist.png}
-\end{figure}
-
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=0.8\linewidth]{normDensity.png}
-\end{figure}
-
-\newpage
-The normal family of distributions has two parameters, mean and standard deviation. We are assuming that the weights in this dataset can be modeled with a normal distribution. Therefore we use two methods to find estimates for the mean and standard deviation parameters, which we will call \(M\) and \(SD\), respectively.
-
-For maximum likelihood, we used R's \lstinline{mle()} function to find \(M\) and \(SD\), which takes a negative log-likelihood function. While the likelihood function is the product of density functions on the given data, the log-likelihood is the sum of the logarithm of those density functions. Therefore we use this line as our negative log-likelihood function:
-
-\begin{lstlisting}
-loglik <- sum(dnorm(weights, M, SD, log = TRUE))
-\end{lstlisting}
-
-Where weights is our weight data, and \(M\) and \(SD\) are our parameter estimates. Plugging this into the \lstinline{mle()} function gives us \(M = 154.5827\) and \(SD = 33.18112\).
-
-The method of moments for a normal distribution is relatively simple. The two parameters of the normal distribution are the mean and standard deviation, which we can generate estimates for using our sample data directly from R. \(M\) is just \(\bar{A}\), our sample mean from calling \(mean(weights)\), and \(SD\) is just \(\sqrt{S^2}\) which can be given by calling \(sqrt(var(weights))\). The difference between using \(S^2\) and \(s^2\) is negligible. Using this method, we get \(M = 154.5827\) and \(SD = 33.18453\).
-
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=0.8\linewidth]{normDensityA.png}
-\end{figure}
-
-We would say that the normal family is a suitable estimator for the weights in this dataset. A normal distribution, according to the central limit theorem, is what results from a set of summations of random variables. The weight of a person can be thought of as a sum of the various parts of their body, whose sizes can be thought of as random. 
-However, based on the graph, which has a slightly steeper slope on the left side than on the right, it can be argued that a gamma distribution would better model this data. 
-
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=0.8\linewidth]{normButGamma.png}
-\end{figure}
-
-\newpage
-And from the graph, we must concede that the gamma family may model this data better than the normal family. But if the central limit theorem says that sums of random variables look normal, and the gamma distribution is a sum of exponentially distributed random variables, it’s no wonder that the graphs look pretty similar. If we’re summing a large enough number of exponential variables, it’s possible that the gamma distribution could converge to a normal distribution. From this line of thinking, the normal and gamma distribution are likely both good estimators for the weights in the dataset.
 
 
 
