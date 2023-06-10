@@ -51,8 +51,6 @@ Of this data, the one we were most interested in was the PRECTOT column, which w
 When we plotted the histogram, the data was heavily skewed left, tapering off more to the right, which resembled that of an exponential graph.
 The most important thing was that the peak of the data was at \(x = 0\), which is where exponential graphs peak.
 
-
-\newpage
 %expHistDefault, %expDensityDefault
 \begin{figure}[h]
   \centering
@@ -65,10 +63,9 @@ The most important thing was that the peak of the data was at \(x = 0\), which i
 \end{figure}
 
 \newpage
+Just from looking at these graphs, while the density function doesn’t look quite exponential, the histogram definitely does. We will discuss possible reasons why later on. But for now, we will find estimators for the parameters of the exponential family.
 The exponential family is a one-parameter family, that being lambda. Using the two methods, we are trying to find an estimator for lambda, which will be referred to as \(L\).
-For maximum likelihood, we used R's \lstinline{mle()} function to find \(L\), which takes a negative log-likelihood function.
-While the likelihood function is the product of density functions on the given data, the log-likelihood is the sum of the logarithm of those density functions.
-Therefore we use this line of code to get the negative log-likelihood.
+We use this line of code to get the negative log-likelihood.
 
 \begin{lstlisting}
 loglik <- -sum(dexp(prectot, L, log = TRUE))
@@ -88,7 +85,6 @@ Plugging this into R we get \(L\) to be 0.5230367.
 Because this is a one-parameter family, we can also derive \(L\) from our sample variance \(S^2\). The variance of an exponentially distributed variable X is given by \(Var(X) = 1 / \lambda^2\). Therefore \(L\) is given by \(L = \sqrt{1 / S^2}\).
 With this method, \(L\) is shown to be 0.2002137, which is very different from the other two methods above. From the graphs below, this particular estimate for lambda isn't very good. 
 
-\newpage
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.8\linewidth]{expHistModifiedA.png}
@@ -106,7 +102,6 @@ By decreasing the bandwidth for the \lstinline{density()} function and increasin
 
 %expHistModifiedA, %expDensityModifiedA
 
-\newpage
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.8\linewidth]{expHistModifiedA.png}
@@ -150,7 +145,6 @@ But even with these discrepancies, given our plots of the exponential distributi
 \section{Normal}
 To model the normal family of distributions we decided to base our model on the weight column of the national.longitudinal.survey data, which contains data of 4908 individuals' statistics like age, race, height, and weight. The weight is distributed in the range from 87 to 325. When we plotted the histogram, most of the data are in the range from 100 to 200, and as the weight either decreases or grows, the number decreases. But most importantly the data looked similar to a bell curve.
 
-\newpage
 %expHistDefault, %expDensityDefault
 \begin{figure}[h]
   \centering
@@ -180,7 +174,6 @@ The method of moments for a normal distribution is relatively simple. The two pa
   \includegraphics[width=0.8\linewidth]{normDensityA.png}
 \end{figure}
 
-\newpage
 We would say that the normal family is a suitable estimator for the weights in this dataset. A normal distribution, according to the central limit theorem, is what results from a set of summations of random variables. The weight of a person can be thought of as a sum of the various parts of their body, whose sizes can be thought of as random. 
 However, based on the graph, which has a slightly steeper slope on the left side than on the right, it can be argued that a gamma distribution would better model this data. 
 
