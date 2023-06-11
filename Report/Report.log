@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.5)  11 JUN 2023 15:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.5)  11 JUN 2023 15:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -422,12 +422,12 @@ File: lstlang2.sty 2023/02/27 1.9 listings language file
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstlang3.sty
 File: lstlang3.sty 2023/02/27 1.9 listings language file
 )
-LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input line 34.
+LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input line 36.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
 File: ot1ntxtlf.fd 2021/05/24 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 34.
+(Font)              scaled to size 12.0pt on input line 36.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count314
@@ -435,24 +435,24 @@ File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 ) (./Report.aux)
 \openout1 = `Report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
  (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count315
@@ -520,29 +520,29 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx))
-Package hyperref Info: Link coloring ON on input line 34.
+Package hyperref Info: Link coloring ON on input line 36.
  (./Report.out) (./Report.out)
 \@outlinefile=\write3
 \openout3 = `Report.out'.
 
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 20.74pt on input line 36.
+(Font)              scaled to size 20.74pt on input line 38.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 36.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 36.
+(Font)              scaled to size 14.4pt on input line 38.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 38.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 36.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 38.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}]
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 24.88pt on input line 36.
+(Font)              scaled to size 24.88pt on input line 38.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 24.88pt on input line 36.
+(Font)              scaled to size 24.88pt on input line 38.
  (./Report.toc
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 (Font)              scaled to size 12.0pt on input line 1.
@@ -554,63 +554,63 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.37 \newpage
+l.39 \newpage
               [1
 
 ]
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 17.28pt on input line 47.
+(Font)              scaled to size 17.28pt on input line 49.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 17.28pt on input line 47.
+(Font)              scaled to size 17.28pt on input line 49.
 <normHist.png, id=35, 367.3725pt x 252.19218pt>
 File: normHist.png Graphic file (type png)
 <use normHist.png>
-Package pdftex.def Info: normHist.png  used on input line 54.
+Package pdftex.def Info: normHist.png  used on input line 56.
 (pdftex.def)             Requested size: 338.58632pt x 232.44676pt.
 <normDensity.png, id=36, 367.3725pt x 252.19218pt>
 File: normDensity.png Graphic file (type png)
 <use normDensity.png>
-Package pdftex.def Info: normDensity.png  used on input line 59.
+Package pdftex.def Info: normDensity.png  used on input line 61.
 (pdftex.def)             Requested size: 338.58632pt x 232.44676pt.
  [2 <./normHist.png> <./normDensity.png>]
-LaTeX Font Info:    Trying to load font information for OT1+ntxtt on input line 65.
+LaTeX Font Info:    Trying to load font information for OT1+ntxtt on input line 67.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/newtx/ot1ntxtt.fd
 File: ot1ntxtt.fd 2012/04/20 v3.1
 )
 LaTeX Font Info:    Font shape `OT1/ntxtt/m/n' will be
-(Font)              scaled to size 12.0pt on input line 65.
+(Font)              scaled to size 12.0pt on input line 67.
 <normDensityA.png, id=45, 367.3725pt x 252.19218pt>
 File: normDensityA.png Graphic file (type png)
 <use normDensityA.png>
-Package pdftex.def Info: normDensityA.png  used on input line 77.
+Package pdftex.def Info: normDensityA.png  used on input line 79.
 (pdftex.def)             Requested size: 483.69687pt x 332.06735pt.
  [3 <./normDensityA.png>]
 <normButGamma.png, id=59, 367.3725pt x 252.19218pt>
 File: normButGamma.png Graphic file (type png)
 <use normButGamma.png>
-Package pdftex.def Info: normButGamma.png  used on input line 86.
+Package pdftex.def Info: normButGamma.png  used on input line 88.
 (pdftex.def)             Requested size: 483.69687pt x 332.06735pt.
  [4 <./normButGamma.png>]
 <expHistDefault.png, id=66, 367.3725pt x 252.19218pt>
 File: expHistDefault.png Graphic file (type png)
 <use expHistDefault.png>
-Package pdftex.def Info: expHistDefault.png  used on input line 113.
+Package pdftex.def Info: expHistDefault.png  used on input line 115.
 (pdftex.def)             Requested size: 338.58632pt x 232.44676pt.
 <expDensityDefault.png, id=67, 367.3725pt x 252.19218pt>
 File: expDensityDefault.png Graphic file (type png)
 <use expDensityDefault.png>
-Package pdftex.def Info: expDensityDefault.png  used on input line 118.
+Package pdftex.def Info: expDensityDefault.png  used on input line 120.
 (pdftex.def)             Requested size: 338.58632pt x 232.44676pt.
  [5 <./expHistDefault.png> <./expDensityDefault.png>]
 <expHistModifiedA.png, id=76, 367.3725pt x 252.19218pt>
 File: expHistModifiedA.png Graphic file (type png)
 <use expHistModifiedA.png>
-Package pdftex.def Info: expHistModifiedA.png  used on input line 146.
+Package pdftex.def Info: expHistModifiedA.png  used on input line 148.
 (pdftex.def)             Requested size: 338.58632pt x 232.44676pt.
 <expDensityDefaultA.png, id=77, 367.3725pt x 252.19218pt>
 File: expDensityDefaultA.png Graphic file (type png)
 <use expDensityDefaultA.png>
-Package pdftex.def Info: expDensityDefaultA.png  used on input line 151.
+Package pdftex.def Info: expDensityDefaultA.png  used on input line 153.
 (pdftex.def)             Requested size: 338.58632pt x 232.44676pt.
 
 
@@ -619,12 +619,12 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [6 <./expHistModifiedA.png>]
 File: expHistModifiedA.png Graphic file (type png)
 <use expHistModifiedA.png>
-Package pdftex.def Info: expHistModifiedA.png  used on input line 163.
+Package pdftex.def Info: expHistModifiedA.png  used on input line 165.
 (pdftex.def)             Requested size: 338.58632pt x 232.44676pt.
 <expDensityModifiedA.png, id=89, 367.3725pt x 252.19218pt>
 File: expDensityModifiedA.png Graphic file (type png)
 <use expDensityModifiedA.png>
-Package pdftex.def Info: expDensityModifiedA.png  used on input line 168.
+Package pdftex.def Info: expDensityModifiedA.png  used on input line 170.
 (pdftex.def)             Requested size: 338.58632pt x 232.44676pt.
 
 
@@ -634,55 +634,55 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <expDensitySmallA.png, id=97, 367.3725pt x 252.19218pt>
 File: expDensitySmallA.png Graphic file (type png)
 <use expDensitySmallA.png>
-Package pdftex.def Info: expDensitySmallA.png  used on input line 177.
+Package pdftex.def Info: expDensitySmallA.png  used on input line 179.
 (pdftex.def)             Requested size: 338.58632pt x 232.44676pt.
  [8 <./expDensityModifiedA.png> <./expDensitySmallA.png>]
 <gammaHist.png, id=106, 367.3725pt x 252.19218pt>
 File: gammaHist.png Graphic file (type png)
 <use gammaHist.png>
-Package pdftex.def Info: gammaHist.png  used on input line 208.
+Package pdftex.def Info: gammaHist.png  used on input line 210.
 (pdftex.def)             Requested size: 338.58632pt x 232.44676pt.
 <gammaDensity.png, id=107, 367.3725pt x 252.19218pt>
 File: gammaDensity.png Graphic file (type png)
 <use gammaDensity.png>
-Package pdftex.def Info: gammaDensity.png  used on input line 213.
+Package pdftex.def Info: gammaDensity.png  used on input line 215.
 (pdftex.def)             Requested size: 338.58632pt x 232.44676pt.
  [9 <./gammaHist.png> <./gammaDensity.png>]
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 236.
+(Font)              scaled to size 8.0pt on input line 238.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.0pt on input line 236.
+(Font)              scaled to size 6.0pt on input line 238.
 <gammaDensityA.png, id=116, 367.3725pt x 252.19218pt>
 File: gammaDensityA.png Graphic file (type png)
 <use gammaDensityA.png>
-Package pdftex.def Info: gammaDensityA.png  used on input line 243.
+Package pdftex.def Info: gammaDensityA.png  used on input line 245.
 (pdftex.def)             Requested size: 338.58632pt x 232.44676pt.
  [10 <./gammaDensityA.png>]
 <betaHist.png, id=125, 367.3725pt x 258.9675pt>
 File: betaHist.png Graphic file (type png)
 <use betaHist.png>
-Package pdftex.def Info: betaHist.png  used on input line 276.
+Package pdftex.def Info: betaHist.png  used on input line 278.
 (pdftex.def)             Requested size: 338.58632pt x 238.69159pt.
 <betaDensity.png, id=126, 367.3725pt x 258.9675pt>
 File: betaDensity.png Graphic file (type png)
 <use betaDensity.png>
-Package pdftex.def Info: betaDensity.png  used on input line 281.
+Package pdftex.def Info: betaDensity.png  used on input line 283.
 (pdftex.def)             Requested size: 338.58632pt x 238.69159pt.
  [11 <./betaHist.png> <./betaDensity.png>]
-LaTeX Font Info:    Trying to load font information for OT1+ntxsups on input line 308.
+LaTeX Font Info:    Trying to load font information for OT1+ntxsups on input line 310.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/newtx/ot1ntxsups.fd
 File: ot1ntxsups.fd 2015/01/17 v1.0
 )
 LaTeX Font Info:    Font shape `OT1/ntxsups/m/n' will be
-(Font)              scaled to size 12.0pt on input line 308.
+(Font)              scaled to size 12.0pt on input line 310.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.0pt on input line 308.
+(Font)              scaled to size 10.0pt on input line 310.
 LaTeX Font Info:    Font shape `OT1/ntxsups/m/n' will be
-(Font)              scaled to size 10.0pt on input line 308.
+(Font)              scaled to size 10.0pt on input line 310.
 <betaDensityA43.png, id=136, 367.3725pt x 258.9675pt>
 File: betaDensityA43.png Graphic file (type png)
 <use betaDensityA43.png>
-Package pdftex.def Info: betaDensityA43.png  used on input line 318.
+Package pdftex.def Info: betaDensityA43.png  used on input line 320.
 (pdftex.def)             Requested size: 483.69687pt x 340.98854pt.
 
 
@@ -701,7 +701,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  83i,11n,131p,798b,1743s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/ntxsups-Regular.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/txfonts/txtt.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/ztmr.pfb>
-Output written on Report.pdf (14 pages, 225980 bytes).
+Output written on Report.pdf (14 pages, 225926 bytes).
 PDF statistics:
  211 PDF objects out of 1000 (max. 8388607)
  141 compressed objects within 2 object streams
