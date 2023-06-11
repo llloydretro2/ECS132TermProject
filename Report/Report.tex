@@ -96,7 +96,7 @@ loglik <- sum(dnorm(weights, M, SD, log = TRUE))
 
 Where weights is our weight data, and \(M\) and \(SD\) are our parameter estimates. Plugging this into the \lstinline{mle()} function gives us \(M = 154.5827\) and \(SD = 33.18112\).
 
-The method of moments for a normal distribution is relatively simple. The two parameters of the normal distribution are the mean and standard deviation, which we can generate estimates for using our sample data directly from R. \(M\) is just \(\bar{A}\), our sample mean from calling \(mean(weights)\), and \(SD\) is just \(\sqrt{S^2}\) which can be given by calling \(sqrt(var(weights))\). The difference between using \(S^2\) and \(s^2\) is negligible. Using this method, we get \(M = 154.5827\) and \(SD = 33.18453\).
+The method of moments for a normal distribution is relatively simple. The two parameters of the normal distribution are the mean and standard deviation, which we can generate estimates for using our sample data directly from R. \(M\) is just \(\bar{A}\), our sample mean from calling \(mean(weights)\), and \(SD\) is just \(\sqrt{s^2}\) which can be given by calling \(sqrt(var(weights))\). The difference between using \(S^2\) and \(s^2\) is negligible. Using this method, we get \(M = 154.5827\) and \(SD = 33.18453\).
 
 \begin{figure}[h]
   \centering
