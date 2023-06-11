@@ -1,6 +1,6 @@
 % This are the basic setting, just leave it
 \documentclass[12pt, a4paper, oneside]{report}
-\usepackage{amsmath, amsthm, amssymb, graphicx, setspace, newtxtext, listings, subcaption, geometry}
+\usepackage{amsmath, amsthm, amssymb, graphicx, setspace, newtxtext, listings, subcaption, geometry, multicol}
 \usepackage[bookmarks=true, colorlinks, citecolor=blue, linkcolor=black]{hyperref}
 
 \lstset{
@@ -257,15 +257,20 @@ For the method of moments, we again use algebra to find \(C\) and \(L\).
 
 % $L = \frac{A}{s^2}$
 
-\begin{gather*}
+\begin{multicols}{2}
+  \begin{align*}
   E(X) = \frac{r}{\lambda} \\
-  \text{Var}(X) = \frac{r}{\lambda^2} \\
   \bar{A} = \frac{C}{L} \\
   C = \bar{A}L \\
+  \end{align*}
+\columnbreak
+  \begin{align*}
+  \text{Var}(X) = \frac{r}{\lambda^2} \\
   s^2 = \frac{C}{L^2} \\
   s^2 = \frac{A}{L} \\
   L = \frac{A}{s^2}
-\end{gather*}
+  \end{align*}
+\end{multicols}
 
 
 
