@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1686525280 "/Users/lloydretro2/Desktop/ECS132/TermProject/Report/Report.tex" "Report.pdf" "Report" 1686525282 0
-  "/Users/lloydretro2/Desktop/ECS132/TermProject/Report/Report.tex" 1686525278 15137 5a1ce22db046a914a98e26ac7270abf0 ""
+["pdflatex"] 1686524771 "/Users/lloydretro2/Desktop/ECS132/TermProject/Report/Report.tex" "Report.pdf" "Report" 1686524773 0
+  "/Users/lloydretro2/Desktop/ECS132/TermProject/Report/Report.tex" 1686524770 15133 22380b3946944c552221e63d9e92a582 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc" 1422827479 2083 60e36f8eac802fcaf19eabe2633b406e ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/newtx/ntxsups_ot1.enc" 1583272976 2856 9c183bd297dcc12b554656ec0c79f350 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -127,10 +127,10 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1686012402 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1686012297 7883462 d6d1681afd46bd7ff1a5ed46265b80a1 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "Report.aux" 1686525282 945 d294579c04aa2fe1cea7e7246153aa6b "pdflatex"
-  "Report.out" 1686525282 460 286de276b646a072e8e20bf19f317ddc "pdflatex"
-  "Report.tex" 1686525278 15137 5a1ce22db046a914a98e26ac7270abf0 ""
-  "Report.toc" 1686525282 226 903f65d8a52c7fb5a0a02a12af860da5 "pdflatex"
+  "Report.aux" 1686524772 944 d01b6eb9d3ccada7ba0f7bceea23da95 "pdflatex"
+  "Report.out" 1686524772 460 286de276b646a072e8e20bf19f317ddc "pdflatex"
+  "Report.tex" 1686524770 15133 22380b3946944c552221e63d9e92a582 ""
+  "Report.toc" 1686524772 225 a507b10805edffd50aec82811dba283a "pdflatex"
   "betaDensity.png" 1686522170 3695 4dc8dfb59094cc07af96fb5769adc7d8 ""
   "betaDensityA43.png" 1686522170 5134 6760ee917e52096aec94ecdf32b2d569 ""
   "betaHist.png" 1686522170 3536 600703e1c95992ba78ebdcb9f67d7187 ""
