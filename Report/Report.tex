@@ -42,7 +42,8 @@
 
 
 
-\chapter{Introduction}
+\chapter*{Introduction}
+\addcontentsline{toc}{chapter}{Introduction}
 In this report we will find and analyze real world data, using proper families of continuous distribution families to present the data with calculations and codes. 
 Specifically, this for the four families of continuous distribution families, we will use:
 
@@ -60,7 +61,8 @@ Specifically, this for the four families of continuous distribution families, we
 
 
 
-\chapter{Analysis}
+\chapter*{Analysis}
+\addcontentsline{toc}{chapter}{Analysis}
 \newpage
 
 
@@ -68,7 +70,8 @@ Specifically, this for the four families of continuous distribution families, we
 
 
 \newpage
-\section{Normal}
+\section*{Normal}
+\addcontentsline{toc}{section}{Normal}
 To model the normal family of distributions we decided to base our model on the weight column of the national.longitudinal.survey data, which contains data of 4908 individuals' statistics like age, race, height, and weight. The weight is distributed in the range from 87 to 325. When we plotted the histogram, most of the data are in the range from 100 to 200, and as we go to the left or right of that, the number of points decreases. But most importantly the data looked similar to a bell curve.
 
 %expHistDefault, %expDensityDefault
@@ -123,7 +126,8 @@ And from the graph, we must concede that the gamma family may model this data be
 
 
 \newpage
-\section{Exponential}
+\section*{Exponential}
+\addcontentsline{toc}{section}{Exponential}
 To model the exponential family of distributions we decided to base our model on the PRECTOT column of the weatherTS data, which looks like it took weather data from Eastern Australia for 10 years (1985--1995).
 Of this data, the one we were most interested in was the PRECTOT column, which we interpreted as the total precipitation on a given day.
 When we plotted the histogram, the data was heavily skewed left, tapering off more to the right, which resembled that of an exponential graph.
@@ -221,8 +225,8 @@ But even with these discrepancies, given our plots of the exponential distributi
 
 
 \newpage
-\section{Gamma}
-
+\section*{Gamma}
+\addcontentsline{toc}{section}{Gamma}
 To model the gamma family of distributions, we decided to use the age column from the dataset adultfinal, which seems like it contains various data from specifically working individuals. We decided to use age because the histogram we observed was very gamma in nature. It shows a steep increase in the number of people in the beginning and more gradually decreases as we go up in age.
 
 \begin{figure}[h]
@@ -294,14 +298,24 @@ But in terms of simply fitting the graph of the data, the gamma distribution doe
 
 
 \newpage
-\section{Beta}
+\section*{Beta}
+\addcontentsline{toc}{section}{Beta}
 % https://statproofbook.github.io/P/beta-mome.html
 % (8) (9) for alpha and beta
-\newpage
 
 
-\chapter{Conclusion}
+
+
+
+
+
+
+
+
 \newpage
+\chapter*{Conclusion}
+\addcontentsline{toc}{chapter}{Conclusion}
+In this report, we model the 4 different dataset with different families of continuous distribution. Specifically, we focused on the normal, exponential, gamma, and beta distribution families. By applying statistical calculation and utilizing programming tool R, we also find estimators for maximum likelihood and method of moments methods.
 
 
 \end{document}
