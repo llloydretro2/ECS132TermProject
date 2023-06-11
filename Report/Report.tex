@@ -247,20 +247,6 @@ We use this line of code for the maximum likelihood estimator:
 Pluging this into the \lstinline{mle()} function gives us \(C = 8.596535\) and \(L = 0.2236146\). 
 For the method of moments, we again use algebra to find \(C\) and \(L\).
 
-% $E(X) = \frac{r}{\lambda}$
-
-% $\text{Var}(X) = \frac{r}{\lambda^2}$
-
-% $\bar{A} = \frac{C}{L}$
-
-% $C = \bar{A}L$
-
-% $s^2 = \frac{C}{L^2}$
-
-% $s^2 = \frac{A}{L}$
-
-% $L = \frac{A}{s^2}$
-
 \begin{multicols}{2}
   \begin{align*}
   E(X) = \frac{r}{\lambda} \\
@@ -275,8 +261,6 @@ For the method of moments, we again use algebra to find \(C\) and \(L\).
   L = \frac{A}{s^2}
   \end{align*}
 \end{multicols}
-
-
 
 Substituting $s^2$ with $var(age)$ and $\bar{A}$ with $mean(age)$ we get $C = 8.587819$ and $L = 0.2233877$.
 
@@ -297,16 +281,71 @@ But in terms of simply fitting the graph of the data, the gamma distribution doe
 
 
 
+
+
+
+
+
+
+
+
+
 \newpage
 \section*{Beta}
 \addcontentsline{toc}{section}{Beta}
 % https://statproofbook.github.io/P/beta-mome.html
 % (8) (9) for alpha and beta
+To model the beta family of distributions we decided to use the GPA column of the lawschoolbrief dataset. GPA has a lower and upper bound, which is the kind of data a beta distribution can model. Judging that the dataset consists of statistics of law school applicants, meaning that the GPA is a college GPA, and that the maximum GPA found in this dataset is 4.23, we decided to use 4.3 (what some schools give for an A+) as the upper bound for our beta distribution. And of course, we’re using 0 as our lower bound. 
 
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.7\linewidth]{betaHist.png}
+\end{figure}
 
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.7\linewidth]{betaDensity.png}
+\end{figure}
 
+The beta family of distributions has two parameters, alpha and beta. Assuming that the GPA data can be modeled with a beta distribution, we are trying to find estimates for alpha and beta, which we will call $a$ and $b$, respectively. 
+We use this line of code for the maximum likelihood estimation:
 
+\begin{lstlisting}
+  loglik <- -sum(dbeta(gpa/fac, a, b, log = TRUE))
+\end{lstlisting}
 
+Where gpa is our data column. Since the beta distribution is by default bounded between 0 and 1, we have to scale our data that's bounded between 0 and 4.3 in order to fit those bounds. So we divide every value in our dataset by fac, 4.3, and then rescale the graph after we’ve gotten our parameters. From the \lstinline{mle()} function those parameters are $a = 13.68352$ and $b = 3.932735$.
+
+For the method of moments, we use algebra to derive $a$ and $b$.
+
+\begin{align*}
+  \mathrm{E}(X) &= \frac{\alpha}{\alpha+\beta} \\
+  \bar{A} &= \frac{a}{a+b} \\
+  (a + b)\bar{A} &= a \\
+  a\bar{A} + b\bar{A} &= a \\
+  b\bar{A} &= a - a\bar{A} \\
+  b &= a / \bar{A} - a \\
+  b &= a \left( \frac{1}{\bar{A}} - 1 \right) \\
+  \mathrm{Var}(X) &= \frac{\alpha\beta}{(\alpha+\beta)^2 (\alpha+\beta+1)} \\
+  s^2 &= \frac{ab}{(a+b)^2 (a+b+1)} \\
+\end{align*}
+
+The derivation for the other variable is tedious and the details aren't important, so we took this from The Book of Statistical Proofs.
+\footnote{https://statproofbook.github.io/P/beta-mome.html}
+
+\begin{align*}
+  a = \bar{A}(\frac{\bar{A}(1-\bar{A})}{s^2})-1)
+\end{align*}
+
+Plugging these into R gives us $a = 13.03444$ and $b = 3.7384$.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\linewidth]{betaDensityA43.png}
+\end{figure}
+\newpage
+
+Of all the other distributions we’ve graphed, this beta distribution created the best-fitting graph for the data we used. So we would say the beta distribution is a suitable estimator for the GPA of applicants to this specific law school. The beta distribution excels at modeling data in a finite range, so it makes sense that GPA, which has a finite range of values, is well modeled by this distribution family. 
 
 
 

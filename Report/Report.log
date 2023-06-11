@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.5)  11 JUN 2023 14:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.5)  11 JUN 2023 15:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -654,33 +654,64 @@ Package pdftex.def Info: gammaDensity.png  used on input line 239.
 (pdftex.def)             Requested size: 338.58632pt x 232.44676pt.
  [11 <./gammaHist.png> <./gammaDensity.png>]
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 276.
+(Font)              scaled to size 8.0pt on input line 262.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.0pt on input line 276.
+(Font)              scaled to size 6.0pt on input line 262.
 <gammaDensityA.png, id=139, 367.3725pt x 252.19218pt>
 File: gammaDensityA.png Graphic file (type png)
 <use gammaDensityA.png>
-Package pdftex.def Info: gammaDensityA.png  used on input line 285.
+Package pdftex.def Info: gammaDensityA.png  used on input line 269.
 (pdftex.def)             Requested size: 338.58632pt x 232.44676pt.
- [12 <./gammaDensityA.png>] [13] [14
+ [12 <./gammaDensityA.png>]
+<betaHist.png, id=149, 367.3725pt x 258.9675pt>
+File: betaHist.png Graphic file (type png)
+<use betaHist.png>
+Package pdftex.def Info: betaHist.png  used on input line 302.
+(pdftex.def)             Requested size: 338.58632pt x 238.69159pt.
+<betaDensity.png, id=150, 367.3725pt x 258.9675pt>
+File: betaDensity.png Graphic file (type png)
+<use betaDensity.png>
+Package pdftex.def Info: betaDensity.png  used on input line 307.
+(pdftex.def)             Requested size: 338.58632pt x 238.69159pt.
+ [13 <./betaHist.png> <./betaDensity.png>]
+LaTeX Font Info:    Trying to load font information for OT1+ntxsups on input line 334.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/newtx/ot1ntxsups.fd
+File: ot1ntxsups.fd 2015/01/17 v1.0
+)
+LaTeX Font Info:    Font shape `OT1/ntxsups/m/n' will be
+(Font)              scaled to size 12.0pt on input line 334.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 10.0pt on input line 334.
+LaTeX Font Info:    Font shape `OT1/ntxsups/m/n' will be
+(Font)              scaled to size 10.0pt on input line 334.
+<betaDensityA43.png, id=160, 367.3725pt x 258.9675pt>
+File: betaDensityA43.png Graphic file (type png)
+<use betaDensityA43.png>
+Package pdftex.def Info: betaDensityA43.png  used on input line 344.
+(pdftex.def)             Requested size: 483.69687pt x 340.98854pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[14{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/newtx/ntxsups_ot1.enc}] [15 <./betaDensityA43.png>] [16
 
 ] (./Report.aux)
 Package rerunfilecheck Info: File `Report.out' has not changed.
-(rerunfilecheck)             Checksum: 258AF3B4D87B1BE951CD6DF98C90E14C;631.
+(rerunfilecheck)             Checksum: C19FD2534BE79C6765E4FA9B6D849698;631.
  ) 
 Here is how much of TeX's memory you used:
- 15616 strings out of 476025
- 244631 string characters out of 5790018
- 1861388 words of memory out of 5000000
- 35787 multiletter control sequences out of 15000+600000
- 533840 words of font info for 84 fonts, out of 8000000 for 9000
+ 15690 strings out of 476025
+ 245977 string characters out of 5790018
+ 1862388 words of memory out of 5000000
+ 35843 multiletter control sequences out of 15000+600000
+ 537654 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,10n,131p,798b,1741s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/txfonts/txtt.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/ztmr.pfb>
-Output written on Report.pdf (15 pages, 206830 bytes).
+ 83i,11n,131p,798b,1741s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/ntxsups-Regular.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/txfonts/txtt.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/ztmr.pfb>
+Output written on Report.pdf (17 pages, 228763 bytes).
 PDF statistics:
- 211 PDF objects out of 1000 (max. 8388607)
- 148 compressed objects within 2 object streams
- 43 named destinations out of 1000 (max. 500000)
- 122 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 239 PDF objects out of 1000 (max. 8388607)
+ 166 compressed objects within 2 object streams
+ 51 named destinations out of 1000 (max. 500000)
+ 137 words of extra memory for PDF output out of 10000 (max. 10000000)
 

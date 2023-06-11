@@ -4,4 +4,4 @@
 \contentsline {section}{Exponential}{7}{section*.9}%
 \contentsline {section}{Gamma}{11}{section*.17}%
 \contentsline {section}{Beta}{13}{section*.21}%
-\contentsline {chapter}{Conclusion}{14}{chapter*.22}%
+\contentsline {chapter}{Conclusion}{16}{chapter*.25}%
