@@ -1,4 +1,4 @@
 \contentsline {chapter}{Normal Family}{2}{section*.2}%
 \contentsline {chapter}{Exponential Family}{5}{section*.7}%
-\contentsline {chapter}{Gamma Family}{9}{section*.15}%
-\contentsline {chapter}{Beta Family}{11}{section*.19}%
+\contentsline {chapter}{Gamma Family}{10}{section*.15}%
+\contentsline {chapter}{Beta Family}{13}{section*.19}%
