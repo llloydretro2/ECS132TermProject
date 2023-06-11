@@ -42,36 +42,10 @@
 
 
 
-\chapter*{Introduction}
-\addcontentsline{toc}{chapter}{Introduction}
-In this report we will find and analyze real world data, using proper families of continuous distribution families to present the data with calculations and codes. 
-Specifically, this for the four families of continuous distribution families, we will use:
-
-\lstinline{weight} column in \lstinline{national.longitudinal.survey.rda} under \lstinline{fairml} directory to model normal family of distribution.
-
-\lstinline{PRECTOT} column in \lstinline{weatherTS.RData} under \lstinline{qeML} directory to model exponential family of distribution.
-
-\lstinline{GPA} column in \lstinline{lawschoolbrief.RData} under \lstinline{EDFfair} directory to model beta family of distribution.
-
-\lstinline{Age} column in \lstinline{AdultFinal.RData} under \lstinline{EDFfair} directory to model gamma family of distribution.
-
-\newpage
 
 
-
-
-
-\chapter*{Analysis}
-\addcontentsline{toc}{chapter}{Analysis}
-\newpage
-
-
-
-
-
-\newpage
-\section*{Normal}
-\addcontentsline{toc}{section}{Normal}
+\section*{Normal Family of Distribution}
+\addcontentsline{toc}{chapter}{Normal Family of Distribution}
 To model the normal family of distributions we decided to base our model on the weight column of the national.longitudinal.survey data, which contains data of 4908 individuals' statistics like age, race, height, and weight. The weight is distributed in the range from 87 to 325. When we plotted the histogram, most of the data are in the range from 100 to 200, and as we go to the left or right of that, the number of points decreases. But most importantly the data looked similar to a bell curve.
 
 %expHistDefault, %expDensityDefault
@@ -126,8 +100,8 @@ And from the graph, we must concede that the gamma family may model this data be
 
 
 \newpage
-\section*{Exponential}
-\addcontentsline{toc}{section}{Exponential}
+\section*{Exponential Family of Distribution}
+\addcontentsline{toc}{chapter}{Exponential Family of Distribution}
 To model the exponential family of distributions we decided to base our model on the PRECTOT column of the weatherTS data, which looks like it took weather data from Eastern Australia for 10 years (1985--1995).
 Of this data, the one we were most interested in was the PRECTOT column, which we interpreted as the total precipitation on a given day.
 When we plotted the histogram, the data was heavily skewed left, tapering off more to the right, which resembled that of an exponential graph.
@@ -225,8 +199,8 @@ But even with these discrepancies, given our plots of the exponential distributi
 
 
 \newpage
-\section*{Gamma}
-\addcontentsline{toc}{section}{Gamma}
+\section*{Gamma Family of Distribution}
+\addcontentsline{toc}{chapter}{Gamma Family of Distribution}
 To model the gamma family of distributions, we decided to use the age column from the dataset adultfinal, which seems like it contains various data from specifically working individuals. We decided to use age because the histogram we observed was very gamma in nature. It shows a steep increase in the number of people in the beginning and more gradually decreases as we go up in age.
 
 \begin{figure}[h]
@@ -291,8 +265,8 @@ But in terms of simply fitting the graph of the data, the gamma distribution doe
 
 
 \newpage
-\section*{Beta}
-\addcontentsline{toc}{section}{Beta}
+\section*{Beta Family of Distribution}
+\addcontentsline{toc}{chapter}{Beta Family of Distribution}
 % https://statproofbook.github.io/P/beta-mome.html
 % (8) (9) for alpha and beta
 To model the beta family of distributions we decided to use the GPA column of the lawschoolbrief dataset. GPA has a lower and upper bound, which is the kind of data a beta distribution can model. Judging that the dataset consists of statistics of law school applicants, meaning that the GPA is a college GPA, and that the maximum GPA found in this dataset is 4.23, we decided to use 4.3 (what some schools give for an A+) as the upper bound for our beta distribution. And of course, we’re using 0 as our lower bound. 
@@ -348,13 +322,6 @@ Plugging these into R gives us $a = 13.03444$ and $b = 3.7384$.
 Of all the other distributions we’ve graphed, this beta distribution created the best-fitting graph for the data we used. So we would say the beta distribution is a suitable estimator for the GPA of applicants to this specific law school. The beta distribution excels at modeling data in a finite range, so it makes sense that GPA, which has a finite range of values, is well modeled by this distribution family. 
 
 
-
-
-
-\newpage
-\chapter*{Conclusion}
-\addcontentsline{toc}{chapter}{Conclusion}
-In this report, we model the 4 different dataset with different families of continuous distribution. Specifically, we focused on the normal, exponential, gamma, and beta distribution families. By applying statistical calculation and utilizing programming tool R, we also find estimators for maximum likelihood and method of moments methods.
 
 
 \end{document}

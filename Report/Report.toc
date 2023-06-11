@@ -1,7 +1,4 @@
-\contentsline {chapter}{Introduction}{2}{chapter*.2}%
-\contentsline {chapter}{Analysis}{3}{chapter*.3}%
-\contentsline {section}{Normal}{4}{section*.4}%
-\contentsline {section}{Exponential}{7}{section*.9}%
-\contentsline {section}{Gamma}{11}{section*.17}%
-\contentsline {section}{Beta}{13}{section*.21}%
-\contentsline {chapter}{Conclusion}{16}{chapter*.25}%
+\contentsline {chapter}{Normal Family of Distribution}{2}{section*.2}%
+\contentsline {chapter}{Exponential Family of Distribution}{5}{section*.7}%
+\contentsline {chapter}{Gamma Family of Distribution}{9}{section*.15}%
+\contentsline {chapter}{Beta Family of Distribution}{11}{section*.19}%
