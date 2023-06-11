@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1686435320 "/Users/lloydretro2/Desktop/ECS132/TermProject/Report/Report.tex" "Report.pdf" "Report" 1686435322 0
-  "/Users/lloydretro2/Desktop/ECS132/TermProject/Report/Report.tex" 1686435318 12142 7258e92f842ccdf719c16af4e0e8734d ""
+["pdflatex"] 1686514474 "/Users/lloydretro2/Desktop/ECS132/TermProject/Report/Report.tex" "Report.pdf" "Report" 1686514476 0
+  "/Users/lloydretro2/Desktop/ECS132/TermProject/Report/Report.tex" 1686514473 12941 0e881a4bb46e6ddabd2edb43e8c04305 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc" 1422827479 2083 60e36f8eac802fcaf19eabe2633b406e ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -122,10 +122,10 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1686012402 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1686012297 7883462 d6d1681afd46bd7ff1a5ed46265b80a1 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "Report.aux" 1686435321 1537 a8318873b779243aea10b17ce7e62b99 "pdflatex"
-  "Report.out" 1686435321 625 c9b8b175583931467b7c8042a4d55bed "pdflatex"
-  "Report.tex" 1686435318 12142 7258e92f842ccdf719c16af4e0e8734d ""
-  "Report.toc" 1686435321 467 93ba99e8f98bfbe33a9e64a2b8158f10 "pdflatex"
+  "Report.aux" 1686514475 1537 a8318873b779243aea10b17ce7e62b99 "pdflatex"
+  "Report.out" 1686514475 625 c9b8b175583931467b7c8042a4d55bed "pdflatex"
+  "Report.tex" 1686514473 12941 0e881a4bb46e6ddabd2edb43e8c04305 ""
+  "Report.toc" 1686514475 467 93ba99e8f98bfbe33a9e64a2b8158f10 "pdflatex"
   "expDensityDefault.png" 1686424625 3451 3a1f1bb1328992e2a86915a0c7dbf414 ""
   "expDensityDefaultA.png" 1686424625 5107 c34d4ae6b81ab82cb4c657aca6e4b602 ""
   "expDensityModifiedA.png" 1686424625 5334 7ade037ba835c6e0ca3a023b1d8bc64e ""

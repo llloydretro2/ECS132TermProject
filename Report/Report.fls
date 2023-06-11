@@ -807,6 +807,11 @@ INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/newtx/ntx-Bold-tlf-ot1
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/vf/public/newtx/ntx-Regular-tlf-ot1.vf
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/newtx/txmiaX.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1r.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/newtx/ot1ntxtt.fd
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/newtx/ot1ntxtt.fd
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/newtx/ot1ntxtt.fd
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/newtx/ot1ntxtt.fd
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/txfonts/txtt.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/newtx/ntx-Bold-tlf-ot1.tfm
 INPUT ./normHist.png
@@ -822,11 +827,6 @@ INPUT ./normDensity.png
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/vf/public/newtx/ntx-Bold-tlf-ot1.vf
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/newtx/txbmiaX.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/newtx/ntx-Bold-tlf-ot1r.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/newtx/ot1ntxtt.fd
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/newtx/ot1ntxtt.fd
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/newtx/ot1ntxtt.fd
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/newtx/ot1ntxtt.fd
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/txfonts/txtt.tfm
 INPUT ./normDensityA.png
 INPUT ./normDensityA.png
 INPUT normDensityA.png
