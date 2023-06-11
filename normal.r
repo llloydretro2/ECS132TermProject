@@ -6,8 +6,8 @@ load("fairml/national.longitudinal.survey.rda", verbose=T)
 wt <- national.longitudinal.survey$weight
 
 # Actual Plot
-# hist(lawschoolbrief$GPA, probability=TRUE)
-plot(density(wt), col = "black", xlab = "x", ylab = "y", main = "Title")
+# hist(wt, probability=TRUE)
+plot(density(wt), col = "black", xlab = "Weight", ylab = "Density", main = "Density w/ Approximations (Normal)", ylim = c(0,0.0125))
 
 # Average
 A <- mean(wt)

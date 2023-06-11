@@ -1,17 +1,17 @@
 # Replace directory with path to the Data folder
-setwd("/Users/lloydretro2/Desktop/ECS132/TermProject/Data")
-# setwd("C:/Users/jonas/Desktop/Class/ECS132/ECS132TermProject/Data")
+#setwd("/Users/lloydretro2/Desktop/ECS132/TermProject/Data")
+setwd("C:/Users/jonas/Desktop/Class/ECS132/ECS132TermProject/Data")
 load("qeML/weatherTS.RData",verbose=T) 
 
 # Save to the local variable
 prec <- weatherTS$PRECTOT
 
 # Default plots
-#hist(prec, probability=TRUE, ylim = c(0,.55))
-#plot(density(prec), col = "black", xlab = "x", ylab = "y", main = "Title")
+#hist(prec, probability=TRUE, main = "Default Histogram of Precipitation", xlab = "Total Precipitaiton")
+plot(density(prec), col = "black", xlab = "Total Precipitaiton", ylab = "Density", main = "Default Density of Precipitation")
 
 # Modified Plot
-hist(prec, probability=TRUE, ylim = c(0,.55), breaks=40)
+#hist(prec, probability=TRUE, ylim = c(0,.55), breaks=40)
 #plot(density(prec , adjust = 3), col = "black", xlab = "x", ylab = "y", main = "Title")
 
 A <- mean(prec)
