@@ -1,6 +1,7 @@
 # Replace directory with path to the Data folder
-setwd("C:/Users/jonas/Desktop/Class/ECS132/ECS132TermProject/Data")
-load("fairml/national.longitudinal.survey.rda", verbose=T)
+#setwd("C:/Users/jonas/Desktop/Class/ECS132/ECS132TermProject/Data")
+#load("fairml/national.longitudinal.survey.rda", verbose=T)
+load("national.longitudinal.survey.rda", verbose=T)
 
 # Save to the local variable
 wt <- national.longitudinal.survey$weight

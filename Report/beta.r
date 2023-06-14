@@ -1,6 +1,7 @@
 # Replace directory with path to the Data folder
-setwd("C:/Users/jonas/Desktop/Class/ECS132/ECS132TermProject/Data")
-load("EDFfair/lawschoolbrief.RData",verbose=T)
+#setwd("C:/Users/jonas/Desktop/Class/ECS132/ECS132TermProject/Data")
+#load("EDFfair/lawschoolbrief.RData",verbose=T)
+load("lawschoolbrief.RData",verbose=T)
 
 # Save to the local variable
 gpa <- lawschoolbrief$GPA

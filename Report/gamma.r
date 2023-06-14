@@ -1,7 +1,8 @@
 # Replace directory with path to the Data folder
-setwd("C:/Users/jonas/Desktop/Class/ECS132/ECS132TermProject/Data")
+#setwd("C:/Users/jonas/Desktop/Class/ECS132/ECS132TermProject/Data")
 #setwd("/Users/lloydretro2/Desktop/ECS132/TermProject/Data/")
-load("EDFfair/AdultFinal.RData",verbose=T) 
+#load("EDFfair/AdultFinal.RData",verbose=T) 
+load("AdultFinal.RData",verbose=T) 
 
 age <- adult$age
 
