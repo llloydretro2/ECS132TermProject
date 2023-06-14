@@ -82,7 +82,7 @@ The method of moments for a normal distribution is relatively simple. The two pa
 
 \newpage
 We would say that the normal family is a suitable estimator for the weights in this dataset. A normal distribution, according to the central limit theorem, is what results from a set of summations of random variables. The weight of a person can be thought of as a sum of the various parts of their body, whose sizes can be thought of as random. 
-However, based on the graph, which has a slightly steeper slope on the left side than on the right, it can be argued that a gamma distribution would better model this data. 
+However, based on the graph, which has a slightly steeper slope on the left side than on the right, it can be argued that a gamma distribution would better model this data. Therefore, we ended up running this dataset through our code for the gamma distribution.
 
 \begin{figure}[h]
   \centering
@@ -146,7 +146,7 @@ With this method, \(L\) is shown to be 0.2002137, which is very different from t
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.7\linewidth]{expHistModifiedA.png}
+  \includegraphics[width=0.7\linewidth]{expHistDefaultA.png}
 \end{figure}
 
 \begin{figure}[h]
@@ -156,7 +156,7 @@ With this method, \(L\) is shown to be 0.2002137, which is very different from t
 
 \newpage
 It is important to note that our exponential distribution plots don't quite match those of the \lstinline{hist()} or \lstinline{density()} functions on our sample data, at least with their default arguments. These discrepancies can be attributed to a bandwidth that doesn't accurately reflect our sample. 
-By decreasing the bandwidth for the \lstinline{density()} function and increasing it for the \lstinline{density()} function, we get graphs that better match our plots.
+By decreasing the bandwidth for the \lstinline{hist()} function and increasing it for the \lstinline{density()} function, we get graphs that better match our plots.
 
 
 %expHistModifiedA, %expDensityModifiedA
@@ -172,7 +172,7 @@ By decreasing the bandwidth for the \lstinline{density()} function and increasin
 \end{figure}
 
 \newpage
-The histogram looks good, but the density function is arguably less exponential-looking as a result. Lowering the bandwidth of the density function does make it more exponential, but likely at the cost of being less accurate due to how few points can actually fit into an individual bandwidth. 
+The data fits our exponential estimates better, but the density function is arguably less exponential-looking as a result. If we were to lower the bandwidth of the density function, the graph looks more exponential, but likely at the cost of being less accurate due to how few points can actually fit into an individual bandwidth. 
 
 
 \begin{figure}[h]
@@ -247,7 +247,7 @@ Substituting $s^2$ with $var(age)$ and $\bar{A}$ with $mean(age)$ we get $C = 8.
 \end{figure}
 
 Judging from the graph, the gamma distribution is a decent estimator for the ages in this dataset. It works especially well for estimating the number of people aged 45 and above. It doesn’t work as well for the rest of the data, but it does the job well enough. In any case, it would be hard to find a distribution family that better fits this data. 
-It is important to note that the ages from this sample don’t exactly reflect the age of everyone in a given population. There is some sampling bias here in that the data is only taken from people who have an occupation, and notably, there is no data from anyone aged 16 or below. Because of this, it is hard to justify why this dataset’s age can be described as a gamma-distributed variable since there are a couple of factors going on here.
+It is important to note that the ages from this sample don’t exactly reflect the age of everyone in a given population. There is some sampling bias here in that the data is only taken from people who have an occupation, and notably, there is no data from anyone aged 16 or below. Because of this, it is hard to justify why this dataset’s age can be described as a gamma-distributed variable since there are a couple of factors that are affecting the ages collected in this dataset.
 But in terms of simply fitting the graph of the data, the gamma distribution does the job just fine.
 
 
@@ -284,7 +284,7 @@ To model the beta family of distributions we decided to use the GPA column of th
   \includegraphics[width=0.7\linewidth]{betaDensity.png}
 \end{figure}
 
-The beta family of distributions has two parameters, alpha and beta. Assuming that the GPA data can be modeled with a beta distribution, we are trying to find estimates for alpha and beta, which we will call $a$ and $b$, respectively. 
+The beta family of distributions has two parameters, alpha and beta. Assuming that the GPA data can be modeled with a beta distribution, we are trying to find estimates for it's 2 parameters, alpha and beta, which we will call $a$ and $b$, respectively. 
 We use this line of code for the maximum likelihood estimation:
 
 \begin{lstlisting}
@@ -305,7 +305,7 @@ For the method of moments, we use algebra to derive $a$ and $b$.
   b &= a \left( \frac{1}{\bar{A}} - 1 \right) \\
 \end{align*}
 
-The derivation for the other variable is tedious and the details aren't important, so we took this from The Book of Statistical Proofs.
+The derivation for the other variable is tedious and the details aren't important, so we skipped to the end of the derivation with The Book of Statistical Proofs.
 \footnote{https://statproofbook.github.io/P/beta-mome.html}
 
 \begin{align*}
